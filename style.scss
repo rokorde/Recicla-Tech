@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: yellow;
+    display: flex; //ativa as caixas flexiveis 
+    justify-content:flex-start; //É o padrão. os intens são postos no começo do eixo principal
+    justify-content: flex-end; //Os Itens sçao postos no final do eixo principal
+    justify-content: center; //Os intens são posto no meio do eixo principal 
+    justify-content: space-around; // O primeiro espaço vazio e o ultimo são iguais
+    justify-content: space-evenly; //O mesmo espaçamento entre os itens.
+    justify-content: space-between; //Primeiro e ultimo item encostado nas paredes
+    height: 40vh;
+    align-items: flex-start; // PADRAO os itens são postos no começo do eixo Y (Vertical)
+    align-items: flex-end; //os itens sao postos no final do eixo Y (vertical)
+    align-items: center; //Os itens são postos no meio do eixo Y (vertical)
+
+}
+    
+h1{
+    border: solid red 5px;
+}
+
+nav{
+    //
+    border: solid green;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size:  1.5rem;
+    color: red;
+}
+
+
+
