@@ -1,44 +1,301 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: yellow;
-    display: flex; //ativa as caixas flexiveis 
-    justify-content:flex-start; //É o padrão. os intens são postos no começo do eixo principal
-    justify-content: flex-end; //Os Itens sçao postos no final do eixo principal
-    justify-content: center; //Os intens são posto no meio do eixo principal 
-    justify-content: space-around; // O primeiro espaço vazio e o ultimo são iguais
-    justify-content: space-evenly; //O mesmo espaçamento entre os itens.
-    justify-content: space-between; //Primeiro e ultimo item encostado nas paredes
-    height: 40vh;
-    align-items: flex-start; // PADRAO os itens são postos no começo do eixo Y (Vertical)
-    align-items: flex-end; //os itens sao postos no final do eixo Y (vertical)
-    align-items: center; //Os itens são postos no meio do eixo Y (vertical)
+  width: 100%;
 
-}
-    
-h1{
-    border: solid red 5px;
+  display: flex; //Ativa as caixas flexíveis
+  //justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo principal.
+  //justify-content: flex-end; //Os itens são postos no final do eixo principal.
+  //justify-content: center; //Os itens são postos no meio do eixo principal.
+  justify-content: space-around; //O primeiro espaço vazio e o último são iguais.
+  // justify-content: space-evenly; //O mesmo espaçamento entre os itens.
+  // justify-content: space-between; // O primeiro item fica no começo do eixo e o último item fica no final do eixo.
+  height: 15vh;
+  align-items: flex-start; //Padrão. Os itens são postos no começo do eixo Y (vertical)
+  align-items: flex-end; //Os itens são postos no final do eixo Y (vertical)
+  align-items: center; //Os itens são postos no meio do eixo Y (vertical)
 }
 
-nav{
-    //
-    border: solid green;
+.caixaLogo {
+  // border: solid;
+  display: flex;
+  justify-content: space-evenly;
+  width: 12%;
+  align-items: center;
+}
+
+h1 {
+  //  border: solid red;
+  font-size: 2rem;
+}
+
+nav {
+  // border: solid rgb(14, 196, 29);
+  display: flex;
+  justify-content: space-evenly;
+  //justify-content: space-between;
+  width: 40%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #4b5563;
+}
+
+.btnVerdeHeader {
+  background-color: #21c05c;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 6px;
+}
+
+//----------- Primeira section - Desktop------------
+
+.primeiraSection {
+  //border: solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+
+  section {
+    //border: solid green;
+    height: 60vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    width: 40%;
-    
+
+    h2 {
+      font-size: 3.75rem;
+      font-weight: 700;
+      width: 55%;
+     // border: solid red;
+    }
+
+    p {
+      font-size: 1.25rem;
+      width: 50%;
+      //border: solid blue;
+    }
+  }
 }
 
-a{
-    text-decoration: none;
-    font-size:  1.5rem;
-    color: red;
+.boxBtnsPrimeiraSection {
+  //border: solid purple;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+
+  button {
+    cursor: pointer;
+    padding: 30px 40px;
+  }
+}
+
+//----------- Section Dados numéricos---------------
+
+.dadosNumericos {
+  background-color: #f3f5f8;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+
+  div {
+    border: solid;
+    width: 15%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+h2{
+  color: #16A34A;
+}
+
+  }
+}
+
+//------ Section Produtos disponíveis ----------
+
+.produtosDisponiveis {
+  //background-color: rgb(203, 244, 230);
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-items: flex-start;
+  align-items: center;
+
+  article {
+   // border: solid red;
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    //  flex-direction: row; //Padrão (fileira). Os itens são organizados em forma de linha da esquerda para a direita.
+    // flex-direction: row-reverse; //Os itens são organizados em forma de linha (fileira) da direita para a esquerda.
+    flex-direction: column; //Os itens são organizados em coluna, de cima para baixo.
+    // flex-direction: column-reverse; //Os itens são organizados em forma de colunas iniciando de baixo para cima.
+
+    //justify-content: center;
+    //justify-content: space-evenly;
+    //justify-content: space-around;
+    justify-content: space-between;
+
+    align-items: center;
+    //align-items: flex-start;
+    //align-items: flex-end;
+
+    img {
+      width: 100%;
+      height: 30vh;
+      border: solid;
+    }
+
+    button {
+      width: 45%;
+      height: 5vh;
+      cursor: pointer;
+      //padding-top: 2rem;
+      //padding-left: 2rem;
+      margin-bottom: 1rem;
+      background-color: #16a34a;
+      color: #ffffff;
+      font-weight: 900;
+      border-radius: 15px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+//Responsivo
+
+//Estrutura com limitador, mínimo de px e máx de px
+// @media(min-width: ;) and (max-width: ;){
+
+// }
+
+//Quero que você aplique esse estilo em telas de 0px até 500px
+
+//Smartphone max: 500px
+
+@media (max-width: 500px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  .caixaLogo {
+    border: solid;
+    width: 70%;
+  }
+
+  nav {
+    border: solid;
+    width: 100%;
+
+    a {
+      font-size: 0.8rem;
+    }
+
+    .btnVerdeHeader {
+      font-size: 0.8rem;
+    }
+  }
+
+  //-----Primeira Section - Mobile -----
+
+  .primeiraSection {
+    //background-color: violet;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+
+    section {
+      height: 70vh;
+     // background-color: #16a34a;
+
+      h2 {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .boxBtnsPrimeiraSection {
+      width: 100%;
+
+      button {
+        padding: 20px 30px;
+      }
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+
+//----------- Section Dados numéricos---------------
+
+.dadosNumericos{
+  //background-color: yellow;
+  height: 25vh;
+
+div{
+  width: 30%;
+
+h2{
+  font-size: 1.8rem;
+}
+
+p{
+  font-size: 1rem;
+}
+
+}
+
+
 }
 
 
 
+  //------Section Produtos Disponíveis-----
+
+  .produtosDisponiveis {
+    display: flex; //Não teria necessidade de usar. Ele já foi ativado na linha 87
+    flex-direction: column;
+   // background-color: pink;
+  
+
+    article {
+      width: 80%;
+      text-align: center;
+
+      button {
+        font-size: 1rem;
+        width: 70%;
+        font-weight: 400;
+      }
+    }
+  }
+
+
+
+}
